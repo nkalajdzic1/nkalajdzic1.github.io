@@ -1,0 +1,76 @@
+<!DOCTYPE HTML>
+<html lang="en">
+
+<head>
+	<title>Nadir Kalajdžić Portifolio</title>
+	<meta charset="utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+	<link rel="stylesheet" href="assets/css/main.css" />
+	<link rel="icon" href="./images/logo.png" type="image/png">
+	<noscript>
+		<link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+</head>
+
+<body class="is-preload">
+
+	<!-- Header -->
+	<header id="header">
+		<a href="index.html" class="title">My projects</a>
+		<nav>
+			<ul>
+				<li><a href="index.html"><i class="fas fa-arrow-left"></i> Back
+						to Home Page</a></li>
+
+			</ul>
+		</nav>
+	</header>
+
+	<!-- Wrapper -->
+	<div id="wrapper">
+
+		<!-- Main -->
+		<section id="main" class="wrapper">
+			<div class="inner">
+				<h1 class="major">Online auction web app</h1>
+				<span class="image fit"><img src="images/img1.png" alt="" /></span>
+				<p>I created this web app while I was having my internship in <a
+						href="https://www.atlantbh.com/">Atlantbh</a>. I was working on my own as a
+					full stack web developer where I used React.js (Typescript) for Front end development and Express.js
+					for Back End development. The database managment was done via Sequelize Migrations (MySQL). The
+					database resets every 24h at 23:30 CET time so the web app always has data to work with (of course,
+					this cannot be done for a real app that is used by a company).</p>
+				<p>To reset the database, I used a heroku job that executes a bash script that resets the database. The
+					Back end server is deployed on heroku where the server itself servers the Front end as a static
+					server for the '/' route.</p>
+				<p>Because heroku uses a virtual machine to host the app and the machine goes
+					to 'sleep' after no request have been sent to the server for 30 min and the machine gets up again
+					after some request is sent to it, I added monitoring for the app so the heroku virtual machine never
+					goes down and the web page opens always fast. This was done via uptimerobot.</p>
+				<p>You can find the code on the following <a href="https://github.com/nkalajdzic1/auction">link</a> and
+					the web link for the deployed app is <a href="https://auctiononline.herokuapp.com/">here</a>.</p>
+			</div>
+		</section>
+
+	</div>
+
+	<!-- Footer -->
+	<footer id="footer" class="wrapper alt">
+		<div class="inner">
+			<ul class="menu">
+				<li>&copy; Nadir Kalajdžić. All rights reserved.</li>
+			</ul>
+		</div>
+	</footer>
+
+	<!-- Scripts -->
+	<script src="assets/js/jquery.min.js"></script>
+	<script src="assets/js/jquery.scrollex.min.js"></script>
+	<script src="assets/js/jquery.scrolly.min.js"></script>
+	<script src="assets/js/browser.min.js"></script>
+	<script src="assets/js/breakpoints.min.js"></script>
+	<script src="assets/js/util.js"></script>
+	<script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
