@@ -8,18 +8,18 @@ body {
 
 .container {
   outline: white solid 7px;
-  width: clamp(300px, 80%, 1024px);
-  margin: 100px auto;
+  width: clamp(300px, 80%, 800px);
+  margin: 200px auto;
   padding: 20px;
   color: white;
   text-align: center;
 }
 
 .container > .header {
-  font-size: clamp(16px, 8vw, 7rem);
+  font-size: clamp(16px, 8vw, 5rem);
 }
 
 .container > .link {
   padding-top: 30px;
-  font-size: clamp(8px, 3vw, 3rem);
+  font-size: clamp(8px, 3vw, 1.25rem);
 }
